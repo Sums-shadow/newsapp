@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jolie post Monsieur"
+        android:textColor="@color/black"
+        android:id="@+id/commentContent"
+        />
+
+    <TextView
+        android:id="@+id/commentContentDate"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="22/01/2022"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

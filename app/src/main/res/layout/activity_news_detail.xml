@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.NewsDetail">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_shade_1"
+        android:textAlignment="center"
+        app:subtitleTextColor="@color/yellow"
+        app:title="News App"
+        app:titleTextColor="@color/white"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBarDetail">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/idIVDetail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="3dp"
+                android:padding="3dp" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/idTVTitleDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idIVDetail"
+                android:layout_margin="10dp"
+                android:text="Title"
+                android:fontFamily="@font/opensans"
+                android:textColor="@color/yellow"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:dividerColor="@color/black_shade_1" />
+
+            <TextView
+                android:id="@+id/idTVSubTitleDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVTitleDetail"
+                android:layout_margin="10dp"
+                android:text="Sub Title"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:dividerColor="@color/black_shade_1" />
+
+            <LinearLayout
+                android:id="@+id/idLinInfo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/idTVSubTitleDetail"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_user"
+                       />
+
+                   <TextView
+                       android:id="@+id/idTVAuthor"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:fontFamily="@font/pacifico"
+                       android:text="Author"
+                       android:textColor="@color/black_shade_1"
+                       android:textSize="19dp"
+                       android:textStyle="normal" />
+               </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" | "/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_calendar"
+    android:layout_marginTop="10dp"
+    />
+                    <TextView
+                        android:id="@+id/idTVDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Date"
+                        android:textColor="@color/black"
+                        android:textSize="19dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/nbComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idLinInfo"
+
+                android:layout_marginTop="50dp"
+                android:text="0 Commentaires" />
+
+            <EditText
+                android:id="@+id/idCommentDetail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/nbComment"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idCommentDetail"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/idBtnCommentDetail"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_style"
+                    android:gravity="center"
+                    android:text="Commenter"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

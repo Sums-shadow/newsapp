@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ProfilActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/grey"
+        android:id="@+id/profilToolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Profil"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilToolbar"
+        android:gravity="center"
+android:id="@+id/profilRelativeLayoutImage"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:maxWidth="20dp"
+            android:padding="10dp"
+            android:maxHeight="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg1" />
+    </LinearLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/profilRelativeLayoutImage">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ezechiel Ngbowa"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/profilNameTV"
+        android:paddingTop="20dp"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ezechielsums001@gmail.com"
+            android:layout_below="@id/profilNameTV"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:padding="2dp"
+            />
+
+</RelativeLayout>
+
+</RelativeLayout>

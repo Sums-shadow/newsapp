@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/signup_top"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Créer un compte"
+            android:textSize="30sp"
+            android:textColor="@color/primaire"
+            android:letterSpacing="0.03"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="0dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="310dp"
+        android:layout_height="300dp"
+        android:background="@drawable/signup"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sign"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:id="@+id/registerEmailTV"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:id="@+id/registerPasswordTV"
+        android:background="@drawable/sign"
+        android:hint="Mot de passe"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sign"
+        android:id="@+id/registerPasswordTV2"
+        android:hint="Confirmer le mot de passe Password"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:id="@+id/registerBtnConnect"
+        android:text="Valider"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J'ai deja un compte"
+        android:textColor="#68329b"
+        android:id="@+id/registerAlreadyAccount"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
