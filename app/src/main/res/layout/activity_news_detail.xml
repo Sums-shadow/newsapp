@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/baseView"
     tools:context=".view.NewsDetail">
 
     <androidx.appcompat.widget.Toolbar

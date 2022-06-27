@@ -2,12 +2,12 @@ package com.adisys.newsapp.model;
 
 public class CommentModel {
 
-   private int id;
+   private String id;
    private String date_publish;
    private String content;
    private String date_comment;
 
-    public CommentModel(int id, String date_publish, String content, String date_comment) {
+    public CommentModel(String id, String date_publish, String content, String date_comment) {
         this.id = id;
         this.date_publish = date_publish;
         this.content = content;
@@ -25,11 +25,11 @@ public class CommentModel {
     public CommentModel() {
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

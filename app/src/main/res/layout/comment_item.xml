@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:orientation="horizontal"
+
     >
 
     <TextView
@@ -14,6 +15,8 @@
         android:text="Jolie post Monsieur"
         android:textColor="@color/black"
         android:id="@+id/commentContent"
+        android:layout_weight="1"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -22,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:text="22/01/2022"
+        android:textStyle="italic"
         android:textColor="@color/black" />
 
 

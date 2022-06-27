@@ -17,6 +17,11 @@
         <entry key="..\:/Users/USER/StudioProjects/newsapp/app/src/main/res/layout/news_item.xml" value="0.33" />
         <entry key="..\:/Users/USER/StudioProjects/newsapp/app/src/main/res/menu/home_menu.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/USER/StudioProjects/newsapp/app/src/main/res/menu/menu_home.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_comment.xml" value="0.41545893719806765" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="app/src/main/res/layout/activity_news_detail.xml" value="0.35260416666666666" />
+        <entry key="app/src/main/res/layout/categories_item.xml" value="0.17916666666666667" />
+        <entry key="app/src/main/res/layout/comment_item.xml" value="0.33" />
       </map>
     </option>
   </component>
